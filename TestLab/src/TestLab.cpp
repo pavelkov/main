@@ -16,10 +16,8 @@ using namespace boost;
 
 //____________________________________________________________________________//
 
-int cpp_main( int, char* [] ) // note name cpp_main, not main.
+int cpp_main( int, char* [] )
 {
-    std::cout << "Hello, world\n";
-
     return 0;
 }
 
