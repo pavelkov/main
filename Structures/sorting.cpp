@@ -1,6 +1,5 @@
 #include "sorting.h"
 
-static int v = 0;
-
-
-
+int foo() {
+	return 0;
+}

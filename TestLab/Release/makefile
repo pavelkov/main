@@ -44,7 +44,7 @@ all: TestLab
 TestLab: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L/home/bomj/Env/Job/Code/main/Structures/Debug -o "TestLab" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++  -o "TestLab" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
