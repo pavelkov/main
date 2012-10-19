@@ -1,15 +1,56 @@
-//============================================================================
-// Name        : TestLab.cpp
-// Author      : 
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
+#include <iostream>
+#include <boost/test/included/prg_exec_monitor.hpp>
 
 #include <iostream>
-using namespace std;
+#include <vector>
+#include <algorithm>
+#include <functional>
+#include <numeric>
 
-int main() {
-	wcout << L"Snap";
+#include <boost/array.hpp>
+
+#include "Structures/sorting.h"
+
+using namespace std;
+using namespace boost;
+
+//____________________________________________________________________________//
+
+int cpp_main( int, char* [] ) // note name cpp_main, not main.
+{
+    std::cout << "Hello, world\n";
+
+    return 0;
+}
+
+//____________________________________________________________________________//
+
+
+
+template <class Ch, class Tr, class T> void print_val(basic_ostream<Ch, Tr>&  stream, T val)
+{
+	cout << val << " ";
+}
+
+template <class Ch, class Tr, class Con> basic_ostream<Ch, Tr>& operator <<(basic_ostream<Ch, Tr>&  stream, Con container) {
+	for_each(container.begin(), container.end(), bind1st(ptr_fun(print_val<Ch, Tr, typename Con::value_type>), stream));
+	return stream;
+}
+
+int old_main() {
+
+	array<int, 5> v;
+
+	//vector<int> v(5, 1);
+
+	partial_sum(v.begin(), v.end(), v.begin());
+
+	transform(v.begin(), v.end(), v.begin(), bind1st(multiplies<int>(), 10));
+
+	cout << v << endl;
+
 	return 0;
 }
+
+
+
