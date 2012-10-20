@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -lStructures
+LIBS := -lStructures -lboost_chrono -lboost_system -lboost_thread
 
