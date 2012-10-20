@@ -10,7 +10,7 @@
 using namespace std;
 
 
-int main( int argc, char* argv[] )
+int old_main( int argc, char* argv[] )
 {
 	boost::array<int, 5> v;
 
