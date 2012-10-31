@@ -1,25 +1,20 @@
-#include <iostream>
-#include <vector>
-#include <numeric>
+#define BOOST_TEST_DYN_LINK
+#define BOOST_TEST_MODULE TestLab
+#include "boost/test/unit_test.hpp"
 
-#include <boost/array.hpp>
-
-#include "Structures/sorting.h"
-#include "Structures/helper.h"
-
-using namespace std;
-
-
-int old_main( int argc, char* argv[] )
+template<class T> class Ololo
 {
-	boost::array<int, 5> v;
+public:
+	void foo();
+};
 
-	v.fill(1);
-	partial_sum(v.begin(), v.end(), v.begin());
+template<class T> void Ololo<T>::foo()
+{
+	return;
+}
 
-	transform(v.begin(), v.end(), v.begin(), bind1st(multiplies<int>(), 10));
-
-	cout << v << endl;
-
-	return 0;
+void test(int* & foo)
+{
+	Ololo<int> lo;
+	lo.foo();
 }

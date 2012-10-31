@@ -1,4 +1,4 @@
-src/TestLab.d: ../src/TestLab.cpp \
+src/StructuresTest.d: ../src/StructuresTest.cpp \
  /usr/local/boost_1_51_0/boost/test/unit_test.hpp \
  /usr/local/boost_1_51_0/boost/test/test_tools.hpp \
  /usr/local/boost_1_51_0/boost/test/predicate_result.hpp \
@@ -334,7 +334,10 @@ src/TestLab.d: ../src/TestLab.cpp \
  /usr/local/boost_1_51_0/boost/utility/swap.hpp \
  /usr/local/boost_1_51_0/boost/type.hpp \
  /usr/local/boost_1_51_0/boost/test/framework.hpp \
- /usr/local/boost_1_51_0/boost/config/auto_link.hpp
+ /usr/local/boost_1_51_0/boost/config/auto_link.hpp \
+ /home/bomj/Env/Job/Code/main/Structures/linked_list.h \
+ /home/bomj/Env/Job/Code/main/Structures/basic.h \
+ /home/bomj/Env/Job/Code/main/Structures/minimpl.h
 
 /usr/local/boost_1_51_0/boost/test/unit_test.hpp:
 
@@ -1007,3 +1010,9 @@ src/TestLab.d: ../src/TestLab.cpp \
 /usr/local/boost_1_51_0/boost/test/framework.hpp:
 
 /usr/local/boost_1_51_0/boost/config/auto_link.hpp:
+
+/home/bomj/Env/Job/Code/main/Structures/linked_list.h:
+
+/home/bomj/Env/Job/Code/main/Structures/basic.h:
+
+/home/bomj/Env/Job/Code/main/Structures/minimpl.h:
